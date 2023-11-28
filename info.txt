@@ -1,0 +1,13 @@
+Cześć,
+cały dokument HTML pochodzi z gotowego szablonu.
+Pracowałem z nim przy pomocy gulpa, całość jest nieco 'pocięta' na coś a'la sekcje/komponenty.
+
+Niestety w kicie nie da sie zrobić właśnie klasycznych komponentów do których dołączasz propsy dlatego jest 'trochę' zbędnego kodu.
+
+Duzo jest styli inline ale chyba lepsze to niz grzebanie w cudzym CSS.
+
+Daj znać prosze jak się na to zapatrujesz, co tu mogę poprawić aby lepiej Ci się w tym pracowało.
+
+Ze swojej strony na pewno chciałbym uczynić ten szablon bardziej dynamicznym, zeby nie trzeba bylo np. udogodnien hotelowych czy pokojow wprowadzac recznie. Moze jakas prosta baza danych i wrzucenie tego wlasnie w komponenty.
+
+pozdrawiam :)
