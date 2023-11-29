@@ -7,15 +7,19 @@
 		min-height: 150px;
 		@include mixins.medium-devices {
 			min-height: 150px;
+			max-height:150px
 		}
 		@include mixins.large-devices {
 			min-height: 250px;
+			max-height:250px
 		}
 		@include mixins.xl-devices {
 			min-height: 300px;
+			max-height:300px
 		}
 		@include mixins.xxl-devices {
 			min-height: 500px;
+			max-height:500px
 		}
 	}
 }
@@ -49,25 +53,39 @@
 		align-items: center;
 		gap: 0.5em;
 
-        & a{
-            color:white;
-            font-size: small;
-            text-decoration: underline;
-        }
-        & button{
-            padding: .3em .6em;
-            border-radius: 20px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: background-color .6s;
-            border:none;
-            &:hover{
-background-color: #8f8f8f;
-            }
-        }
+		& a {
+			color: white;
+			font-size: small;
+			text-decoration: underline;
+		}
+		& button {
+			padding: 0.3em 0.6em;
+			border-radius: 20px;
+			font-weight: bold;
+			cursor: pointer;
+			transition: background-color 0.6s;
+			border: none;
+			&:hover {
+				background-color: #8f8f8f;
+			}
+		}
 	}
 }
 
-.hidden{
-    display: none;
+.hidden {
+	display: none;
+}
+
+.products__container {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	max-width: 1280px;
+	margin: 0 auto;
+	gap: 3em;
+	@include mixins.medium-devices {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	@include mixins.large-devices {
+		grid-template-columns: repeat(3, 1fr);
+	}
 }

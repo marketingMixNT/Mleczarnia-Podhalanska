@@ -226,8 +226,16 @@ body input[type="submit"].tourmaster-room-button.tourmaster-full{ width: 100%; }
 .tourmaster-label-checkbox span:before{ content: "\f00c"; font-family: 'FontAwesome';  }
 .tourmaster-label-checkbox input[type="checkbox"]:checked + span{ visibility: visible; }
 
-.tourmaster-room-single-price-breakdown{ position: relative; display: none; font-size: 16px; padding: 30px; background: #fff;
-    border-radius: 20px; -webkit-border-radius: 20px -moz-border-radius: 20px }
+.tourmaster-room-single-price-breakdown {
+    position: relative;
+    display: none;
+    font-size: 16px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+}
 .tourmaster-room-single-price-breakdown .tourmaster-lightbox-close{ right: 20px; top: 20px; }
 .tourmaster-room-single-price-breakdown .tourmaster-title{ font-size: 25px; font-weight: 600; margin-bottom: 30px }
 .tourmaster-room-single-price-breakdown .tourmaster-room-title{ font-size: 20px; margin-bottom: 10px; font-weight: 600; }
