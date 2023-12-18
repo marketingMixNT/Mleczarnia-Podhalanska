@@ -1,0 +1,20 @@
+@use './utilities/global';
+@use './utilities/mixins';
+
+.shop {
+	&-images {
+		&__outdoor {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			gap: 1em;
+            padding: 0 5em 2em 5em;;
+			@include mixins.medium-devices {
+				flex-direction: row;
+                padding: 0 5em 2em 5em;
+
+			}
+		}
+	}
+}
