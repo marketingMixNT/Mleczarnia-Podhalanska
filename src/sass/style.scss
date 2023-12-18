@@ -1,3 +1,7 @@
+@use './products-page.scss';
+
+
+
 @use './utilities/global';
 @use './utilities/mixins';
 
@@ -96,16 +100,3 @@
 	display: none;
 }
 
-.products__container {
-	display: grid;
-	grid-template-columns: repeat(1, 1fr);
-	max-width: 1280px;
-	margin: 0 auto;
-	gap: 3em;
-	@include mixins.medium-devices {
-		grid-template-columns: repeat(2, 1fr);
-	}
-	@include mixins.large-devices {
-		grid-template-columns: repeat(3, 1fr);
-	}
-}

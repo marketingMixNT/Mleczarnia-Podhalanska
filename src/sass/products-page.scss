@@ -1,0 +1,32 @@
+@use './utilities/global';
+@use './utilities/mixins';
+
+.products__container {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	max-width: 1600px;
+	margin: 0 auto;
+	gap: 3em;
+	@include mixins.medium-devices {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	@include mixins.large-devices {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	@include mixins.xxl-devices {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
+.product {
+	&-card {
+		&__desc {
+			max-height: 300px;
+			min-height: 300px;
+		}
+	}
+}
+
+.tourmaster-container {
+	max-width: 1600px !important;
+}
