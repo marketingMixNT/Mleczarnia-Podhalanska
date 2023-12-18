@@ -55,8 +55,14 @@ function convertImages(done) {
     done()
 }
 
+// function handleKits(done) {
+//     src(paths.html)
+//         .pipe(kit())
+//         .pipe(dest('./'));
+//     done()
+// }
 function handleKits(done) {
-    src(paths.html)
+    src('./html/*.kit') // zmieniono tutaj ścieżkę
         .pipe(kit())
         .pipe(dest('./'));
     done()
