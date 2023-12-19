@@ -82,3 +82,16 @@ setTodaysDate();
 footerYear ? footerYear.innerHTML = year : ''
 
 
+
+
+//SHUFFLE OTHER PRODUCTS
+
+document.addEventListener("DOMContentLoaded", () => {
+    const container = document.getElementById('other-products__container');
+    const divs = Array.from(container.children); 
+    const shuffledDivs = divs.sort(() => 0.5 - Math.random()); 
+
+    container.innerHTML = '';
+
+    shuffledDivs.forEach(div => container.appendChild(div));
+});
