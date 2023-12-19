@@ -95,3 +95,28 @@ document.addEventListener("DOMContentLoaded", () => {
 
     shuffledDivs.forEach(div => container.appendChild(div));
 });
+
+//SHUFFLE ALL PRODUCTS
+
+document.addEventListener("DOMContentLoaded", () => {
+    const container = document.getElementById('products__container');
+    const divs = Array.from(container.children); 
+    const shuffledDivs = divs.sort(() => 0.5 - Math.random()); 
+
+    container.innerHTML = '';
+
+    shuffledDivs.forEach(div => container.appendChild(div));
+});
+
+// const shuffleProducts = (containerId) => {
+//     const container = document.getElementById(containerId);
+//     const divs = Array.from(container.children);
+//     const shuffledDivs = divs.sort(() => 0.5 - Math.random());
+
+//     container.innerHTML = '';
+//     shuffledDivs.forEach(div => container.appendChild(div));
+// }
+// document.addEventListener("DOMContentLoaded", () => {
+//     shuffleProducts('other-products__container');
+//     shuffleProducts('products__container');
+// });
