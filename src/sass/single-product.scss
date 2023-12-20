@@ -1,0 +1,30 @@
+@use './utilities/mixins';
+
+.product {
+	&__container {
+		display: flex;
+        flex-direction:column;
+		justify-content: center;
+		align-items: center;
+		gap: 3em;
+        margin: 80px 0;
+		max-width:1280px;
+	
+		@include mixins.medium-devices {
+			flex-direction: row;
+            margin: 80px 0;
+		}
+	}
+    &__image, &__info{
+        width:100%;
+        @include mixins.medium-devices {
+			width:50%;
+		};
+    }
+    &__info{
+        padding:0 3em;
+        @include mixins.medium-devices {
+			padding: 0
+		};
+    }
+}
