@@ -1,0 +1,27 @@
+@use './utilities/colors';
+
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.btn{
+    &--primary{
+        background-color: colors.$primary !important;
+        border-radius: 0;
+        cursor: pointer;
+        border: none;
+        transition: all .6s;
+       
+    }
+}
+
+.menu-active{
+    background-color: colors.$secondary !important;
+    
+}
+
+

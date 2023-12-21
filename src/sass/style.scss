@@ -1,33 +1,12 @@
 @use './products-page.scss';
 @use './shop.scss';
 @use'./single-product.scss';
+@use'./gallery.scss';
+@use './global.scss';
 
-
-@use './utilities/global';
 @use './utilities/mixins';
 
-.gallery {
-	&__img {
-		object-fit: cover;
-		min-height: 150px;
-		@include mixins.medium-devices {
-			min-height: 150px;
-			max-height:150px
-		}
-		@include mixins.large-devices {
-			min-height: 250px;
-			max-height:250px
-		}
-		@include mixins.xl-devices {
-			min-height: 300px;
-			max-height:300px
-		}
-		@include mixins.xxl-devices {
-			min-height: 500px;
-			max-height:500px
-		}
-	}
-}
+
 
 .product {
 	&__img {

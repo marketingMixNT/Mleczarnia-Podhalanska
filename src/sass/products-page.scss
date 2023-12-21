@@ -1,32 +1,57 @@
-@use './utilities/global';
 @use './utilities/mixins';
 
 .products__container {
-	display: grid;
-	grid-template-columns: repeat(1, 1fr);
-	max-width: 1600px;
-	margin: 0 auto;
-	gap: 3em;
-	@include mixins.medium-devices {
-		grid-template-columns: repeat(2, 1fr);
-	}
-	@include mixins.large-devices {
-		grid-template-columns: repeat(3, 1fr);
-	}
-	@include mixins.xxl-devices {
-		grid-template-columns: repeat(4, 1fr);
-	}
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2em;
+	flex-wrap:wrap
+	
+
+
+
+	// display: grid;
+	
+	// grid-template-columns: repeat(1, 1fr);
+	// max-width: 1600px;
+	// margin: 0 auto;
+	// gap: 3em;
+	// @include mixins.medium-devices {
+	// 	grid-template-columns: repeat(2, 1fr);
+	// }
+	// @include mixins.large-devices {
+	// 	grid-template-columns: repeat(3, 1fr);
+	// }
+	// @include mixins.xxl-devices {
+	// 	grid-template-columns: repeat(4, 1fr);
+	// }
 }
 
 .product {
 	&-card {
 		&__desc {
-			max-height: 300px;
-			min-height: 300px;
+			max-height: 250px;
+			min-height: 250px;
 		}
 	}
 }
 
 .tourmaster-container {
 	max-width: 1600px !important;
+}
+
+
+
+.tourmaster-room-grid {
+	width: 100%;
+	@include mixins.medium-devices {
+		width: 50%;
+	}
+	@include mixins.large-devices {
+		width: 33%;
+	}
+	@include mixins.xxl-devices {
+		width: 23%;
+	}
 }
