@@ -43,15 +43,15 @@
 
 
 
-.tourmaster-room-grid {
-	width: 100%;
-	@include mixins.medium-devices {
-		width: 50%;
-	}
-	@include mixins.large-devices {
-		width: 33%;
-	}
-	@include mixins.xxl-devices {
-		width: 23%;
-	}
-}
+// .tourmaster-room-grid {
+// 	width: 100%;
+// 	@include mixins.medium-devices {
+// 		width: 50%;
+// 	}
+// 	@include mixins.large-devices {
+// 		width: 33%;
+// 	}
+// 	@include mixins.xxl-devices {
+// 		width: 23%;
+// 	}
+// }
